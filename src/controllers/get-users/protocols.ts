@@ -1,3 +1,10 @@
+import { User } from "../../models/users";
+
 export interface IGetUsersController {
-    handle(): any;
+    handle(): Promise<HttpResponse<User[]>>;
+
 }
+
+export interface IGetUsersRepository {
+    getUsers(): Promise<User[]>
+} 
