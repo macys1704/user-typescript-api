@@ -1,1 +1,13 @@
-console.log('hello world');
+import express, { Request, Response } from "express" 
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const app = express();
+const port = process.env.PORT || 8080;
+
+app.get("/", (req: Request   , res: Response) => {
+     res.send("hellow world");
+});
+
+app.listen(port, () => console.log("Porta 8080 funcional"))
