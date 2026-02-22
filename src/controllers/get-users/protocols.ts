@@ -1,3 +1,3 @@
-interface GetUsersController {
-    
+export interface IGetUsersController {
+    handle(): any;
 }
