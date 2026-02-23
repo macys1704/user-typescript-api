@@ -1,4 +1,3 @@
-import { STATUS_CODES } from "node:http";
 import { IGetUsersController, IGetUsersRepository } from "./protocols";
 
 export class GetUsersControllers implements IGetUsersController {
@@ -13,8 +12,8 @@ export class GetUsersControllers implements IGetUsersController {
                 }
         } catch (error) {
             return {
-                stausCode: 500,
-                body: "falta inserir"
+                statusCode: 500,
+                body: "falta inserir",
             }
             
         }
